@@ -23,6 +23,7 @@ import { Product15Component } from './product15/product15.component';
 import { Product16Component } from './product16/product16.component';
 import { Product17Component } from './product17/product17.component';
 import { Product18Component } from './product18/product18.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { Product18Component } from './product18/product18.component';
     Product15Component,
     Product16Component,
     Product17Component,
-    Product18Component
+    Product18Component,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
