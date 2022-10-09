@@ -26,7 +26,72 @@ import { Product18Component } from './product18/product18.component';
 import { FooterComponent } from './footer/footer.component';
 import { MyorderComponent } from './myorder/myorder.component';
 import { MycartComponent } from './mycart/mycart.component';
-
+import { RouterModule, Routes } from '@angular/router';
+const appRoutes:Routes=[
+  {
+    path:"",component:HomeComponent
+  },
+  {
+    path:"product1",component:Product1Component
+  },
+  {
+    path:"product2",component:Product2Component
+  },
+  {
+    path:"product3",component:Product3Component
+  },
+  {
+    path:"product4",component:Product4Component
+  },
+  {
+    path:"product5",component:Product5Component
+  },
+  {
+    path:"product6",component:Product6Component
+  },
+  {
+    path:"product7",component:Product7Component
+  },
+  {
+    path:"product8",component:Product8Component
+  },
+  {
+    path:"product9",component:Product9Component
+  },
+  {
+    path:"product10",component:Product10Component
+  },
+  {
+    path:"product11",component:Product11Component
+  },
+  {
+    path:"product12",component:Product12Component
+  },
+  {
+    path:"product13",component:Product13Component
+  },
+  {
+    path:"product14",component:Product14Component
+  },
+  {
+    path:"product15",component:Product15Component
+  },
+  {
+    path:"product16",component:Product16Component
+  },
+  {
+    path:"product17",component:Product17Component
+  },
+  {
+    path:"product18",component:Product18Component
+  },
+  {
+    path:"mycart",component:MycartComponent
+  },
+  {
+    path:"myorder",component:MyorderComponent
+  }
+]
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,7 +121,8 @@ import { MycartComponent } from './mycart/mycart.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
