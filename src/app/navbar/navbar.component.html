@@ -61,20 +61,20 @@
                     <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                       <h1 style="text-align: center;"><span style="color: lightgreen;">Sign-</span><span style="color: lightblue;">UP</span></h1>
                       <label for="" class="form-label">Name:</label>
-                      <input placeholder="Enter your Name" type="text" class="form-control">
+                      <input placeholder="Enter your Name" type="text" class="form-control" name="Name" [(ngModel)]="Name">
                       <label for="" class="form-label">Mobile number:</label>
-                      <input placeholder="Enter your Mobile number" type="tel" class="form-control">
+                      <input placeholder="Enter your Mobile number" type="tel" class="form-control"name="MobileNo" [(ngModel)]="MobileNo">
                       <label for="" class="form-label">Email:</label>
-                      <input placeholder="Enter your Email" type="email" name="" id="" class="form-control">
+                      <input placeholder="Enter your Email" type="email" name="Email" id="" class="form-control"[(ngModel)]="Email">
                       <label for="" class="form-label">Username:</label>
-                      <input placeholder="Enter a Username" type="text" class="form-control">
+                      <input placeholder="Enter a Username" type="text" class="form-control"name="Username" [(ngModel)]="Username">
                       <label for="" class="form-label">Password:</label>
-                      <input placeholder="Enter a password"type="password" name="" id="" class="form-control">
+                      <input placeholder="Enter a password"type="password" name="Password" id="" class="form-control"[(ngModel)]="Password">
                       <label for="" class="form-label">Confirm Password:</label>
                       <input placeholder="Enter password again"type="password" name="" id="" class="form-control">
                       <br>
                       <div class="d-grid gap-2 col-6 mx-auto">
-                        <button class="btn btn-primary" type="button"onclick="location.href='index.html'">Register</button>
+                        <button class="btn btn-primary" type="button"onclick="location.href='index.html'"(click)="readRegister()">Register</button>
                       </div>
                     </div>
                   </div>
